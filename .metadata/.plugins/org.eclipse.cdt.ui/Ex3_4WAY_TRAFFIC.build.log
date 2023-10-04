@@ -1,0 +1,10 @@
+17:20:36 **** Incremental Build of configuration Debug for project Ex3_4WAY_TRAFFIC ****
+make -j12 all 
+arm-none-eabi-size   Ex3_4WAY_TRAFFIC.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4836	     20	   1572	   6428	   191c	Ex3_4WAY_TRAFFIC.elf
+Finished building: default.size.stdout
+ 
+
+17:20:36 Build Finished. 0 errors, 0 warnings. (took 219ms)
+

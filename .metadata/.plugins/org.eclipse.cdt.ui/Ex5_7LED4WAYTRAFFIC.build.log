@@ -1,0 +1,10 @@
+18:50:09 **** Incremental Build of configuration Debug for project Ex5_7LED4WAYTRAFFIC ****
+make -j12 all 
+arm-none-eabi-size   Ex5_7LED4WAYTRAFFIC.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5728	     20	   1572	   7320	   1c98	Ex5_7LED4WAYTRAFFIC.elf
+Finished building: default.size.stdout
+ 
+
+18:50:10 Build Finished. 0 errors, 0 warnings. (took 235ms)
+

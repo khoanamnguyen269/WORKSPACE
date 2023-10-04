@@ -1,0 +1,23 @@
+16:53:39 **** Incremental Build of configuration Debug for project Ex2_RED_GREEN_YELLOW ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Ex2_RED_GREEN_YELLOW.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\HCMUT\NAM 4\VI XU LY (LAB)\WORKSPACE\Ex2_RED_GREEN_YELLOW\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex2_RED_GREEN_YELLOW.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Ex2_RED_GREEN_YELLOW.elf
+ 
+arm-none-eabi-size   Ex2_RED_GREEN_YELLOW.elf 
+arm-none-eabi-objdump -h -S  Ex2_RED_GREEN_YELLOW.elf  > "Ex2_RED_GREEN_YELLOW.list"
+arm-none-eabi-objcopy  -O ihex  Ex2_RED_GREEN_YELLOW.elf  "Ex2_RED_GREEN_YELLOW.hex"
+   text	   data	    bss	    dec	    hex	filename
+   4704	     20	   1572	   6296	   1898	Ex2_RED_GREEN_YELLOW.elf
+arm-none-eabi-objcopy  -O binary  Ex2_RED_GREEN_YELLOW.elf  "Ex2_RED_GREEN_YELLOW.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Ex2_RED_GREEN_YELLOW.hex
+Finished building: Ex2_RED_GREEN_YELLOW.bin
+Finished building: Ex2_RED_GREEN_YELLOW.list
+ 
+ 
+ 
+
+16:53:40 Build Finished. 0 errors, 0 warnings. (took 1s.177ms)
+

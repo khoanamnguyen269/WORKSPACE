@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;Ex3_4WAY_TRAFFIC&apos;" deleteContents="true" description="Delete resource &apos;Ex3_4WAY_TRAFFIC&apos;" element1="/Ex3_4WAY_TRAFFIC" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1696413525776"/>&#x0A;<refactoring comment="Delete resource &apos;Ex5_7LED4WAY&apos;" deleteContents="false" description="Delete resource &apos;Ex5_7LED4WAY&apos;" element1="/Ex5_7LED4WAY" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1696419639186"/>
+</session>

@@ -1,0 +1,22 @@
+19:23:26 **** Incremental Build of configuration Debug for project Ex6_AnalogClock ****
+make -j12 all 
+arm-none-eabi-gcc -o "Ex6_AnalogClock.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\HCMUT\NAM 4\VI XU LY (LAB)\WORKSPACE\Ex6_AnalogClock\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex6_AnalogClock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Ex6_AnalogClock.elf
+ 
+arm-none-eabi-size   Ex6_AnalogClock.elf 
+arm-none-eabi-objdump -h -S  Ex6_AnalogClock.elf  > "Ex6_AnalogClock.list"
+arm-none-eabi-objcopy  -O ihex  Ex6_AnalogClock.elf  "Ex6_AnalogClock.hex"
+   text	   data	    bss	    dec	    hex	filename
+   5340	     20	   1572	   6932	   1b14	Ex6_AnalogClock.elf
+arm-none-eabi-objcopy  -O binary  Ex6_AnalogClock.elf  "Ex6_AnalogClock.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Ex6_AnalogClock.hex
+Finished building: Ex6_AnalogClock.bin
+ 
+Finished building: Ex6_AnalogClock.list
+ 
+ 
+
+19:23:27 Build Finished. 0 errors, 0 warnings. (took 484ms)
+
